@@ -11,7 +11,28 @@ java main
 make clean
 ```
 
-## Example output
+## Introduction
+
+A toy project to learn about thread synchronization in java.
+
+The project simulates a manufacturing process where different worker must process different articles on different workstation.
+Constraint:
+- Each workstation performs as single type of action on the article
+- A workstation can be used by a single worker on a single article at a time
+- Artcile must be transformed in each workstation in a given order represented by a graph
+
+## Example simulation
+### Scenario
+
+Three workers must process two articles following this below flow:
+
+![article flow](doc/article_flow.png)
+
+
+- Workers 1. and 2. are processing together article 1.
+- Worker 3. is processing the article 2.
+
+### Output
 
 ```
 Melting the article 0
